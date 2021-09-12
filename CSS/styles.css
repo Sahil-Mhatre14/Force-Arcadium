@@ -1,0 +1,487 @@
+/* Top Section */
+
+#top {
+  background-color: black;
+  /* padding: 1% 5%; */
+  overflow-x: hidden;
+  position: relative;
+}
+
+#top .container-fluid {
+  padding: 1% 3%;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* pointer-events: none; */
+}
+
+.nav-heading {
+  margin: 0 10px;
+}
+
+.brand-heading i{
+  font-size: 2rem;
+}
+/* .navbar-icon {
+  margin-right: 20px;
+} */
+
+.navbar-brand {
+  font-family: "Press Start 2P", cursive;
+  margin-right: -30px;
+}
+
+.header-list {
+  margin: 0 auto;
+  font-family: "Press Start 2P", cursive;
+}
+
+.navbar-nav.navbar-center {
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+.navbar-join-btn {
+  font-family: "Press Start 2P", cursive;
+}
+
+.top-row {
+  margin-top: 10%;
+}
+.arcade-1-container img {
+  position: relative;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  width: 85%;
+  height: 500px;
+}
+
+.top-content-center {
+  text-align: center;
+  color: white;
+  font-family: "Press Start 2P", cursive;
+}
+
+.brand-heading-big,
+.brand-subheading {
+  font-size: 5rem;
+  -webkit-text-stroke: 3px yellow;
+  -webkit-text-fill-color: red;
+}
+
+.brand-p {
+  margin-top: 50px;
+}
+.arcade-2-container img {
+  position: relative;
+  right: -50px;
+  width: 90%;
+  height: 500px;
+}
+
+.top-join-btn {
+  margin-top: 50px;
+  position: relative;
+}
+
+/* About Us Section */
+#about {
+  overflow-x: hidden;
+}
+
+#about .container-fluid {
+  padding: 5% 15%;
+  margin-top: 60px;
+}
+
+#about h3 {
+  font-family: "Press Start 2P", cursive;
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+}
+
+#about p {
+  font-family: "VT323", monospace;
+  font-size: 1.2rem;
+  color: grey;
+}
+
+hr {
+  width: 15%;
+  border-style: dotted none none none;
+  border-width: 10px;
+  border-color: rgb(255, 0, 0);
+  margin: auto;
+  background-color: white;
+
+}
+
+/* Divisions Section */
+
+#divisions .divisions-heading-container {
+  margin-top: 80px;
+}
+
+#divisions .divisions-h3 {
+  text-align: center;
+  font-family: "Press Start 2P", cursive;
+  font-size: 2.8rem;
+}
+
+#divisions .divisions-p {
+  font-family: "VT323", monospace;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 40px;
+  /* margin-bottom: -100px; */
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 100vh; imp change*/
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.cards-container-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin-top: -50px;
+  margin-bottom: 100px;
+}
+
+.cards-container-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 100vh; */
+  margin-top: -50px;
+}
+
+.animated-card {
+  position: relative;
+  width: 600px;
+  height: 350px;
+  /* background: #ccc; */
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.animated-card .circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  /* overflow: hidden; */
+}
+
+.animated-card .circle::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: red;
+  clip-path: circle(120px at center);
+  transition: 0.5s;
+}
+
+.animated-card.cp-card .circle::before {
+    background-color: gold;
+}
+.animated-card.cp-card:hover .circle::before {
+  background: #1b1cd7;
+}
+
+.animated-card.mc-card .circle::before {
+    background-color: brown;
+}
+
+.animated-card.krunker-card .circle::before {
+    background-color: orange;
+}
+
+.animated-card.among-us-card .circle::before {
+    background-color: black;
+}
+
+.animated-card.roblox-card .circle::before {
+    background-color: rgb(61, 216, 255);
+}
+
+.animated-card:hover .circle:before {
+  background: red;
+  border-radius: 20px;
+  border: 5px solid black;
+  clip-path: circle(400px at center);
+}
+
+.animated-card img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 300px;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.animated-card:hover img {
+  left: 72%;
+  height: 500px;
+}
+
+.animated-card-content {
+  position: relative;
+  width: 50%;
+  padding: 30px 20px 20px 40px;
+  left: 20%;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.animated-card:hover .animated-card-content {
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+.animated-card-content h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 1em;
+  font-family: "Press Start 2P", cursive;
+}
+
+.animated-card-content p {
+  color: #fff;
+  font-family: "VT323", monospace;
+}
+
+.animated-card-content button {
+  font-family: "Press Start 2P", cursive;
+}
+
+@media (max-width: 1050px) {
+  .animated-card {
+    /* width: auto; */
+    max-width: 350px;
+    align-items: flex-start;
+    margin: 10px;
+  }
+
+  .animated-card:hover {
+    height: 600px;
+  }
+
+  .animated-card .animated-card-content {
+    width: 100%;
+    left: 0;
+    padding: 40px;
+  }
+
+  .animated-card:hover img {
+    top: 70%;
+    left: 50%;
+    height: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .animated-card .animated-card-content {
+    padding: 20px;
+  }
+}
+
+/* CTA Section */
+#cta {
+  margin-top: 100px;
+  background-color: black;
+  color: white;
+}
+
+#cta .container-fluid {
+  text-align: center;
+  padding: 5% 7%;
+}
+
+#cta h3 {
+  font-family: "Press Start 2P", cursive;
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+}
+
+#cta p {
+  font-family: "VT323", monospace;
+  font-size: 1.5rem;
+}
+
+.cta-join-btn {
+  margin-top: 30px;
+}
+
+.cta-join-btn button {
+  border-radius: 30px;
+  font-family: "Press Start 2P", cursive;
+}
+
+/* Footer Section */
+#footer .container-fluid {
+  text-align: center;
+  margin: 50px 0 30px;
+}
+
+.footer-icons-div {
+  padding: 0 5%;
+  margin: 0 auto;
+}
+
+.f-icons {
+  padding: 0 1%;
+}
+
+.footer-p-div {
+  margin-top: 10px;
+}
+.footer-p-div p {
+  font-family: "VT323", monospace;
+  font-size: 1.3rem;
+}
+
+.twitter-icon {
+  color: #1da1f2;
+}
+
+.instagram-icon {
+  color: #8a3ab9;
+}
+
+.youtube-icon {
+  color: #ff0000;
+}
+
+.spotify-icon {
+  color: #1db954;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .brand-heading-big {
+  }
+  .brand-subheading {
+    font-size: 4rem;
+  }
+  .about-content {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  .arcade-1-container {
+    display: none;
+    text-align: center;
+  }
+  .arcade-2-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .arcade-2-container img {
+    width: 350px;
+    right: 0;
+  }
+  .navbar-collapse {
+    text-align: center;
+  }
+  #about .container-fluid {
+    text-align: center;
+  }
+
+  .about-content {
+    margin-top: 50px;
+  }
+  .divisions-p {
+    margin-bottom: 0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .animated-card {
+    margin: 0 auto;
+  }
+  .cards-container-2 {
+    margin-top: 0;
+  }
+}
+@media (max-width: 576px) {
+  .brand-heading-big {
+    font-size: 3rem;
+  }
+  .brand-subheading {
+    font-size: 2.5rem;
+  }
+  .brand-p {
+    padding: 0 30px;
+  }
+  .brand-p p {
+    font-size: 0.8rem;
+  }
+  .arcade-2-container img {
+    width: 60%;
+    height: 90%;
+  }
+  .about-content {
+    /* text-align: justify; */
+    padding: 0 5%;
+    text-align: center;
+  }
+  .about-content h3 {
+    font-size: 2rem !important;
+  }
+  .about-content p {
+    text-align: justify;
+  }
+  #divisions h3 {
+      font-size: 2rem !important;
+  }
+  .divisions-content-p {
+      padding: 0 30px !important;
+  }
+  #cta h3 {
+    font-size: 2rem;
+  }
+  #cta p {
+    font-size: 1.2rem;
+  }
+
+}
+
+@media(max-width: 1300px) and (min-width: 1050px){
+    .animated-card {
+        width: 500px;
+        /* height: 300px; */
+    }
+    .animated-card h2 {
+        font-size: 1.5rem;
+    }
+    .animated-card p {
+        font-size: 0.8rem;
+    }
+    .animated-card:hover img {
+        height: 250px;
+    }
+}
