@@ -79,7 +79,7 @@
 .arcade-2-container img {
   position: relative;
   right: -50px;
-  width: 90%;
+  width: 85%;
   height: 500px;
 }
 
@@ -152,7 +152,7 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 50vh;
   margin-top: -50px;
   margin-bottom: 100px;
 }
@@ -443,6 +443,9 @@ hr {
   .arcade-2-container img {
     width: 60%;
     height: 90%;
+  }
+  #about img {
+    width: 96%;
   }
   .about-content {
     /* text-align: justify; */
