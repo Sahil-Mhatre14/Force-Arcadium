@@ -210,16 +210,41 @@ hr {
     background-color: brown;
 }
 
+.animated-card.mc-card:hover .circle::before {
+  background: green;
+}
+
 .animated-card.krunker-card .circle::before {
     background-color: orange;
 }
 
-.animated-card.among-us-card .circle::before {
-    background-color: black;
+.animated-card.krunker-card:hover .circle::before {
+  background-color: #4A403A;
 }
+
+.animated-card.among-us-card .circle::before {
+    background-color: #290FBA;
+}
+
+.animated-card.among-us-card:hover .circle::before {
+  background: #000000;
+}
+
+.animated-card.supercell-card .circle::before {
+  background-color: #ff0000;
+}
+
+.animated-card.supercell-card:hover .circle::before {
+  background: gold;
+}
+
 
 .animated-card.roblox-card .circle::before {
     background-color: rgb(61, 216, 255);
+}
+
+.animated-card.roblox-card:hover .circle::before {
+  background: grey;
 }
 
 .animated-card:hover .circle:before {
