@@ -1,3 +1,7 @@
+body {
+  background-color: black;
+}
+
 /* Top Section */
 
 #top {
@@ -18,6 +22,31 @@
   /* pointer-events: none; */
 }
 
+
+
+ #particles-3-js{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#particles-4-js{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+} 
+
+#particles-5-js{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+} 
+
+/* #particles-2-js{
+  position: fixed;
+  height: -webkit-fill-available;
+  z-index: 0;
+} */
 .nav-heading {
   margin: 0 10px;
 }
@@ -93,6 +122,20 @@
   overflow-x: hidden;
 }
 
+#particles-2-js{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#about img {
+  position: relative;
+}
+/* #particles-2-js{
+  position: fixed;
+  height: -webkit-fill-available;
+  z-index: 10;
+} */
 #about .container-fluid {
   padding: 5% 15%;
   margin-top: 60px;
@@ -102,6 +145,7 @@
   font-family: "Press Start 2P", cursive;
   font-size: 2.8rem;
   margin-bottom: 30px;
+  color: white;
 }
 
 #about p {
@@ -116,8 +160,8 @@ hr {
   border-width: 10px;
   border-color: rgb(255, 0, 0);
   margin: auto;
-  background-color: white;
-
+  opacity: 1;
+  background-color: transparent;
 }
 
 /* Divisions Section */
@@ -130,6 +174,7 @@ hr {
   text-align: center;
   font-family: "Press Start 2P", cursive;
   font-size: 2.8rem;
+  color: white;
 }
 
 #divisions .divisions-p {
@@ -137,6 +182,7 @@ hr {
   font-size: 1.2rem;
   text-align: center;
   margin-top: 40px;
+  color: white;
   /* margin-bottom: -100px; */
 }
 
@@ -173,7 +219,7 @@ hr {
   border-radius: 20px;
   display: flex;
   align-items: center;
-  border-radius: 20px;
+  border-radius: 20;
   transition: 0.5s;
 }
 
@@ -235,7 +281,7 @@ hr {
 }
 
 .animated-card.supercell-card:hover .circle::before {
-  background: gold;
+  background: orange;
 }
 
 
@@ -250,7 +296,7 @@ hr {
 .animated-card:hover .circle:before {
   background: red;
   border-radius: 20px;
-  border: 5px solid black;
+  border: 5px solid white;
   clip-path: circle(400px at center);
 }
 
@@ -336,8 +382,9 @@ hr {
 /* CTA Section */
 #cta {
   margin-top: 100px;
-  background-color: black;
+  background-color: red;
   color: white;
+  position: relative;
 }
 
 #cta .container-fluid {
@@ -386,6 +433,7 @@ hr {
 .footer-p-div p {
   font-family: "VT323", monospace;
   font-size: 1.3rem;
+  color: white;
 }
 
 .twitter-icon {
