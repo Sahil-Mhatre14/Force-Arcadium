@@ -52,8 +52,8 @@ nav-heading {
 }
 
 .title {
-    /* font-family: 'Merriweather', serif; */
-    font-family: 'Burbank Small';
+    font-family: 'Merriweather', serif;
+    /* font-family: 'Burbank Small'; */
     font-weight: 900;
     font-size: 3.5rem;
 }
@@ -73,18 +73,18 @@ figure {
 }
 
 .blog-p p {
-    /* font-family: 'Merriweather', serif; */
-    font-family: 'Burbank Small';
+  font-family: 'Tajawal', sans-serif;
+    /* font-family: 'Burbank Small'; */
     font-weight: 500;
     font-style: normal;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 1.5;
     text-align: justify;
 }
 
 .blog-p h2 {
-  font-family: 'Burbank Small';
-  font-weight: 900;
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 700;
   font-size: 3rem;
 }
 
