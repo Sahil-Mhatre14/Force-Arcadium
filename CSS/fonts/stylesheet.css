@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Burbank Small';
+    src: url('https://theforcearcadium.com/CSS/fonts/BurbankSmall-Light.woff2') format('woff2'),
+        url('https://theforcearcadium.com/CSS/fonts/BurbankSmall-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Burbank Big Cd Bd';
+    src: url('https://theforcearcadium.com/CSS/fonts/BurbankBigCondensed-Bold.woff2') format('woff2'),
+        url('https://theforcearcadium.com/CSS/fonts/BurbankBigCondensed-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Burbank Small';
+    src: url('https://theforcearcadium.com/CSS/fonts/BurbankSmall-Medium.woff2') format('woff2'),
+        url('https://theforcearcadium.com/CSS/fonts/BurbankSmall-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Burbank Small';
+    src: url('https://theforcearcadium.com/CSS/fonts/BurbankSmall-Bold.woff2') format('woff2'),
+        url('https://theforcearcadium.com/CSS/fonts/BurbankSmall-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
