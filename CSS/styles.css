@@ -34,6 +34,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
+  z-index: -1;
 } 
 
 #particles-5-js{
@@ -83,8 +84,8 @@ body {
 }
 .arcade-1-container img {
   position: relative;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
+  /* -webkit-transform: scaleX(-1);
+  transform: scaleX(-1); */
   width: 85%;
   height: 500px;
 }
