@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Burbank Small';
-    src: url('../BurbankSmall-Light.woff2') format('woff2'),
-        url('../BurbankSmall-Light.woff') format('woff');
+    src: url('../fonts/BurbankSmall-Light.woff2') format('woff2'),
+        url('../fonts/BurbankSmall-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'Burbank Big Cd Bd';
-    src: url('../BurbankBigCondensed-Bold.woff2') format('woff2'),
-        url('../BurbankBigCondensed-Bold.woff') format('woff');
+    src: url('../fonts/BurbankBigCondensed-Bold.woff2') format('woff2'),
+        url('../fonts/BurbankBigCondensed-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -18,8 +18,8 @@
 
 @font-face {
     font-family: 'Burbank Small';
-    src: url('../BurbankSmall-Medium.woff2') format('woff2'),
-        url('../BurbankSmall-Medium.woff') format('woff');
+    src: url('../fonts/BurbankSmall-Medium.woff2') format('woff2'),
+        url('../fonts/BurbankSmall-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -27,8 +27,8 @@
 
 @font-face {
     font-family: 'Burbank Small';
-    src: url('../BurbankSmall-Bold.woff2') format('woff2'),
-        url('../BurbankSmall-Bold.woff') format('woff');
+    src: url('../fonts/BurbankSmall-Bold.woff2') format('woff2'),
+        url('../fonts/BurbankSmall-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
