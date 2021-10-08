@@ -6,10 +6,17 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta name="title" content="Force Arcadium" />
+      <meta content="Feedback Form" property="og:title" />
       <meta
-        name="description"
-        content="The Force Arcadium is a multi-game community currently serving gamers across various titles. We are players gathered together under a single banner to game and build lasting friendships. Join us in this exciting gaming adventure and meet amazing people!"
+        content="Help us improve your overall experience in the Force Arcadium by submitting a feedback. "
+        property="og:description"
       />
+      <meta
+        content="https://theforcearcadium.com/feedback-form.html"
+        property="og:url"
+      />
+      <meta content="#ff9900" data-react-helmet="true" name="theme-color" />
+      <meta property="og:site_name" content="Force Arcadium" />
 
       <!-- Open Graph / Facebook -->
       <meta property="og:type" content="website" />
@@ -116,16 +123,28 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="header-list navbar-nav ms-auto me-auto mb-2 mb-lg-0">
                 <li class="nav-item nav-heading">
-                  <a class="nav-link" href="https://theforcearcadium.com/">Home</a>
+                  <a class="nav-link" href="https://theforcearcadium.com/"
+                    >Home</a
+                  >
                 </li>
                 <li class="nav-item nav-heading">
-                  <a class="nav-link" href="https://theforcearcadium.com/#about">About</a>
+                  <a class="nav-link" href="https://theforcearcadium.com/#about"
+                    >About</a
+                  >
                 </li>
                 <li class="nav-item nav-heading">
-                  <a class="nav-link" href="https://theforcearcadium.com/#divisions">Divisions</a>
+                  <a
+                    class="nav-link"
+                    href="https://theforcearcadium.com/#divisions"
+                    >Divisions</a
+                  >
                 </li>
                 <li class="nav-item nav-heading">
-                  <a class="nav-link" href="https://theforcearcadium.com/#footer">Socials</a>
+                  <a
+                    class="nav-link"
+                    href="https://theforcearcadium.com/#footer"
+                    >Socials</a
+                  >
                 </li>
                 <li class="nav-item nav-heading">
                   <a class="nav-link" href="/release-blog">Blog</a>
@@ -142,11 +161,19 @@
             </div>
           </div>
         </nav>
-        <h1 class="form-title">Feedback <br> Form</h1>
-        <p class="feedback-p" style="text-align: center; width: 50%; margin: 40px auto -40px;">Your feedback will enable us to provide you a better gaming experience in the Force Arcadium.</p>
+        <h1 class="form-title">
+          Feedback <br />
+          Form
+        </h1>
+        <p
+          class="feedback-p"
+          style="text-align: center; width: 50%; margin: 40px auto -40px"
+        >
+          Your feedback will enable us to provide you a better gaming experience
+          in the Force Arcadium.
+        </p>
         <div class="form-div">
           <form action="/feedback-form" method="POST">
-            
             <div class="mb-3">
               <label for="username" class="form-label">Discord Username</label>
               <input
@@ -160,9 +187,11 @@
                 Include tag numbers as well. (Ex: Sam Chilles#1409)
               </div>
             </div>
-  
+
             <div class="mb-3">
-              <label for="games" class="form-label">Games you prefer to play in Force Arcadium</label>
+              <label for="games" class="form-label"
+                >Games you prefer to play in Force Arcadium</label
+              >
               <input
                 type="text"
                 class="form-control"
@@ -174,43 +203,73 @@
                 Ex: Minecraft, AmongUs, Supercell Games, etc.
               </div>
             </div>
-            
-  
+
             <div class="mb-3">
-              <label for="schedule" class="form-label">Do you like the way schedules are made for the Arcadium?</label>
+              <label for="schedule" class="form-label"
+                >Do you like the way schedules are made for the Arcadium?</label
+              >
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="scheduleRadio" value="Yes" id="flexRadioDefault1" checked>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="scheduleRadio"
+                  value="Yes"
+                  id="flexRadioDefault1"
+                  checked
+                />
                 <label class="form-check-label" for="flexRadioDefault1">
                   Yes
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="scheduleRadio" value="No" id="flexRadioDefault2">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="scheduleRadio"
+                  value="No"
+                  id="flexRadioDefault2"
+                />
                 <label class="form-check-label" for="flexRadioDefault2">
-                   No
+                  No
                 </label>
               </div>
             </div>
-  
+
             <div class="mb-3">
-              <label for="numOfEvents" class="form-label">Should we increase the number of events held per day?</label>
+              <label for="numOfEvents" class="form-label"
+                >Should we increase the number of events held per day?</label
+              >
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="numOfEventsRadio" value="Yes" id="flexRadioDefault3">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="numOfEventsRadio"
+                  value="Yes"
+                  id="flexRadioDefault3"
+                />
                 <label class="form-check-label" for="flexRadioDefault3">
                   Yes
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="numOfEventsRadio" value="No" id="flexRadioDefault4" checked>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="numOfEventsRadio"
+                  value="No"
+                  id="flexRadioDefault4"
+                  checked
+                />
                 <label class="form-check-label" for="flexRadioDefault4">
                   No
                 </label>
               </div>
             </div>
-  
+
             <div class="mb-3">
               <label for="genFeedback" class="form-label"
-                >Provide us a feedback about your overall experience in the Force Arcadium.</label
+                >Provide us a feedback about your overall experience in the
+                Force Arcadium.</label
               >
               <textarea
                 class="form-control"
@@ -220,10 +279,16 @@
                 rows="10"
               ></textarea>
             </div>
-            <hr class="mt-3">
-            <h1 class="form-title" style="margin-top: 40px;">Website <br> Feedback</h1>
-            <p class="feedback-p" style="text-align: center; margin: 40px auto;">Answer the questions like whether the site takes too long to load, whether it renders properly
-              on your device and feel free to DM any any suggestions/improvements to <u>Sam Chilles#1409</u></p>
+            <hr class="mt-3" />
+            <h1 class="form-title" style="margin-top: 40px">
+              Website <br />
+              Feedback
+            </h1>
+            <p class="feedback-p" style="text-align: center; margin: 40px auto">
+              Answer the questions like whether the site takes too long to load,
+              whether it renders properly on your device and feel free to DM any
+              any suggestions/improvements to <u>Sam Chilles#1409</u>
+            </p>
             <div class="mb-3">
               <label for="websiteFeedback" class="form-label"
                 >What do u think about Force Arcadium's website?</label
@@ -240,8 +305,6 @@
           </form>
         </div>
       </div>
-
-      
     </section>
 
     <!-- Footer -->
@@ -281,8 +344,8 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
-      <!-- Particle JS -->
-      <script src="../JS/particles.js"></script>
-      <script src="../JS/particles-app.js"></script>
+    <!-- Particle JS -->
+    <script src="../JS/particles.js"></script>
+    <script src="../JS/particles-app.js"></script>
   </body>
 </html>
