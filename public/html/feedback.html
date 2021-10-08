@@ -61,7 +61,7 @@
         href="images/favicon-16x16.png"
       />
       <link rel="manifest" href="images/site.webmanifest" />
-      <title>Mod Application</title>
+      <title>Feedback Form</title>
       <!-- Google Fonts CDN -->
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -142,9 +142,11 @@
             </div>
           </div>
         </nav>
-        <h1 class="form-title">Mod Application</h1>
+        <h1 class="form-title">Feedback <br> Form</h1>
+        <p class="feedback-p" style="text-align: center; width: 50%; margin: 40px auto -40px;">Your feedback will enable us to provide you a better gaming experience in the Force Arcadium.</p>
         <div class="form-div">
-          <form action="/mod-application" method="POST">
+          <form action="/feedback-form" method="POST">
+            
             <div class="mb-3">
               <label for="username" class="form-label">Discord Username</label>
               <input
@@ -160,52 +162,80 @@
             </div>
   
             <div class="mb-3">
-              <label for="hfRank" class="form-label">Rank in Help Force (if any)</label>
+              <label for="games" class="form-label">Games you prefer to play in Force Arcadium</label>
               <input
                 type="text"
                 class="form-control"
-                id="hfRank"
+                id="games"
                 aria-describedby="emailHelp"
-                name="hfRank"
+                name="games"
               />
+              <div id="emailHelp" class="form-text">
+                Ex: Minecraft, AmongUs, Supercell Games, etc.
+              </div>
+            </div>
+            
+  
+            <div class="mb-3">
+              <label for="schedule" class="form-label">Do you like the way schedules are made for the Arcadium?</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="scheduleRadio" value="Yes" id="flexRadioDefault1" checked>
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Yes
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="scheduleRadio" value="No" id="flexRadioDefault2">
+                <label class="form-check-label" for="flexRadioDefault2">
+                   No
+                </label>
+              </div>
             </div>
   
             <div class="mb-3">
-              <label for="timezone" class="form-label">Timezone</label>
-              <select id="timezone" name = "timezone" class="form-select" aria-label="Default select example">
-                <optgroup>
-                  <option value="Ausia">Ausia</option>
-                  <option value="EU">EU</option>
-                  <option value="US">US</option>
-                </optgroup>
-                
-              </select>
+              <label for="numOfEvents" class="form-label">Should we increase the number of events held per day?</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="numOfEventsRadio" value="Yes" id="flexRadioDefault3">
+                <label class="form-check-label" for="flexRadioDefault3">
+                  Yes
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="numOfEventsRadio" value="No" id="flexRadioDefault4" checked>
+                <label class="form-check-label" for="flexRadioDefault4">
+                  No
+                </label>
+              </div>
             </div>
   
             <div class="mb-3">
-              <label for="game" class="form-label">Which game are you interested in hosting?</label>
-              <input
-                type="text"
-                class="form-control"
-                id="game"
-                aria-describedby="emailHelp"
-                name="game"
-              />
-            </div>
-  
-            <div class="mb-3">
-              <label for="description" class="form-label"
-                >Describe your experience in that game & why you want to become a moderator.</label
+              <label for="genFeedback" class="form-label"
+                >Provide us a feedback about your overall experience in the Force Arcadium.</label
               >
               <textarea
                 class="form-control"
-                name="description"
-                id="description"
+                name="genFeedback"
+                id="genFeedback"
+                cols="20"
+                rows="10"
+              ></textarea>
+            </div>
+            <hr class="mt-3">
+            <h1 class="form-title" style="margin-top: 40px;">Website <br> Feedback</h1>
+            <p class="feedback-p" style="text-align: center; margin: 40px auto;">Answer the questions like whether the site takes too long to load, whether it renders properly
+              on your device and feel free to DM any any suggestions/improvements to <u>Sam Chilles#1409</u></p>
+            <div class="mb-3">
+              <label for="websiteFeedback" class="form-label"
+                >What do u think about Force Arcadium's website?</label
+              >
+              <textarea
+                class="form-control"
+                name="websiteFeedback"
+                id="websiteFeedback"
                 cols="30"
                 rows="10"
               ></textarea>
             </div>
-  
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
         </div>

@@ -58,11 +58,17 @@
 .form-title {
   font-family: "Press Start 2P", cursive;
   font-size: 3rem;
-  -webkit-text-stroke: 3px yellow;
+  -webkit-text-stroke: 2px yellow;
   -webkit-text-fill-color: red;
   text-align: center;
   color: white;
   margin-top: 80px;
+}
+
+.feedback-p {
+  font-family: "VT323", monospace;
+  font-size: 1.4rem;
+  color: white;
 }
 
 /* Footer Section */
