@@ -124,4 +124,12 @@
   .form-title {
     font-size: 1.8rem;
   }
+
+  .feedback-p {
+    width: 80% !important;
+  }
+
+  .website-feedback-p {
+    width: 90% !important;
+  }
 }
