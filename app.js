@@ -26,7 +26,7 @@ client.once('ready', () => {
 
 // Login to Discord with your client's token
 client.login(token);
-console.log(client);
+// console.log(client);
 
 //TODO
 
