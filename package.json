@@ -18,6 +18,10 @@
   "homepage": "https://github.com/Sahil-Mhatre14/Force-Arcadium#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "discord.js": "^13.2.0",
+    "discord.js11": "npm:discord.js@^11.6.4",
+    "discord.js12": "npm:discord.js@^12.4.1",
+    "ejs": "^3.1.6",
     "express": "^4.17.1",
     "nodemailer": "^6.6.3",
     "nodemon": "^2.0.12"

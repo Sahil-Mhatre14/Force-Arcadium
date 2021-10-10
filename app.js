@@ -2,6 +2,9 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
+const { Client, Intents } = require('discord.js12');
+const { token } = require('./public/JS/config.json');
+
 
 
 const app = express();
@@ -12,6 +15,18 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 app.use(express.static("public"));
+
+// Create a new client instance
+const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
+
+// When the client is ready, run this code (only once)
+client.once('ready', () => {
+	console.log(`${client.user.tag}`);
+});
+
+// Login to Discord with your client's token
+client.login(token);
+console.log(client);
 
 //TODO
 
@@ -32,6 +47,52 @@ app.get("/feedback-form", function(req, res) {
   res.sendFile(__dirname + "/public/html/feedback.html");
 });
 
+app.get("/staff", function(req, res) {
+  const options = {dynamic: true};
+  const admins = ['532991839238750243', '561251425359757314', '740959665613176872', '303713050387808256'];
+  const organizers = ['540009186558345241', '264016165469290497', '688104072154579030', '417592460844466176'];
+  const developers = ['866934562826354698'];
+
+  var adminInfo = [];
+  var developerInfo = [];
+  var organizerInfo = [];
+  var c = 0;
+  function incrementCount() {
+    c++;
+    if (c == 9) {
+       load();
+    }
+  }
+  admins.forEach(function(adminId) {
+    client.users.fetch(adminId).then((user) => {
+      var url = user.avatarURL(options);
+      
+      adminInfo.push({name: user.username, avatar: url});
+      incrementCount()
+    }).catch(console.error);
+  });
+
+  organizers.forEach(function(orgId) {
+    client.users.fetch(orgId).then((user) => {
+      var url = user.avatarURL(options);
+      organizerInfo.push({name: user.username, avatar: url});
+      incrementCount()
+    }).catch(console.error);
+  });
+
+  developers.forEach(function(devId) {
+    client.users.fetch(devId).then((user) => {
+      var url = user.avatarURL(options);
+      developerInfo.push({name: user.username, avatar: url});
+      incrementCount();
+    }).catch(console.error);
+  });
+
+  function load () {
+    res.render('staff', {admins: adminInfo, organizers: organizerInfo, developers: developerInfo});
+  }
+  
+})
 
 app.post("/mod-application", function(req, res) {
   // console.log(req.body.username);
@@ -133,6 +194,33 @@ app.post("/feedback-form", function(req, res) {
 
       res.redirect("/");
   });
+});
+
+app.get("/getUser", function(req, res) {
+
+  const options = {dynamic: true};
+
+  
+    client.users.fetch('866934562826354698').then((user) => {
+      console.log(user);
+    }).catch(console.error);
+
+
+  
+  
+
+  // client.users.fetch('866934562826354698').then((user) => {
+  //   console.log(user.avatarURL(options));
+  // }).catch(console.error);
+
+  // client.users.fetch('700248400179888172').then((user) => {
+  //   client.users.cache.get('700248400179888172').send('Hello bro! Sahil here').then((user) => {
+  //     console.log("DM sent successfully");
+  //   }).catch(console.error);
+  // }).catch(console.error);
+
+  
+
 });
 
 app.listen(process.env.PORT || 3000, function() {
